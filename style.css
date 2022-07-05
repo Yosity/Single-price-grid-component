@@ -1,0 +1,151 @@
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    min-height: 100vh;
+    padding: 10%;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 47rem;
+    min-width: 250px;
+}
+.header {
+    background-color: white;
+    padding: 3% 8%;
+}
+.header h1 {
+    font-size: 22px;
+    color: hsl(179, 62%, 43%) ;
+}
+.header h2 {
+    font-size: 16px;
+    color: hsl(71, 73%, 54%);
+}
+.header p {
+    font-size: 14px;
+    color: hsl(218, 22%, 67%);
+    line-height: 1.5rem;
+}
+@media (min-width : 700px) {
+    body {
+        padding: auto;
+    }
+    main {
+        
+        grid-template-columns: 1fr 1fr;
+        width: 55%;
+        min-height: 35rem;
+        min-width: 0;
+        max-width: 60rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+    }
+    .header{
+        grid-column: span 2;
+    }
+    .header h1 {
+        font-size: 2.3rem;
+    }
+    .header h2 {
+        font-size: 1.5rem;
+    }
+    .header p {
+        font-size: 1rem;
+    }
+}
+.middle-section {
+    background-color: hsl(179, 62%, 43%);
+    padding: 3% 8%;
+}
+.middle-section h2 {
+    font-size: 17px;
+    color: white;
+    margin-bottom: 0;
+}
+.price {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0;
+
+}
+.price span {
+    color: hsl(179, 88%, 57%);
+    font-size: 16px;
+    margin-left: 1rem;
+}
+.access-paragraph {
+    color: white;
+    font-size: 16px;
+
+    margin-top: 0;
+}
+.middle-section div {  
+    text-align: center;
+    max-width: 15rem;
+
+    margin-top: 2rem;
+    border-radius:0.5rem ;
+    overflow: hidden;
+    box-shadow: 0 6px 20px -5px hsl(178, 61%, 24%);
+}
+button {
+    background-color: hsl(71, 73%, 54%); 
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+    padding: 1rem; 
+    
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+button:hover {
+    background-color: white;
+    color: hsl(71, 73%, 54%);
+}
+
+.last-section {
+    background-color: hsl(179, 65%, 50%);
+    color: white;
+    padding: 3% 8%;
+}
+.last-section h2 {
+    font-size: 17px;
+}
+ul {
+    line-height: 1.3rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.attribution {
+    display: none;
+}
+@media (min-width : 700px) {
+    .middle-section h2 ,.last-section h2{
+        font-size: 20px;
+    }
+    .attribution {
+        display: block;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px;
+    }
+    .attribution a {
+        text-decoration: none;
+        font-weight: bold;
+        color: hsl(179, 62%, 32%);
+    }
+}
